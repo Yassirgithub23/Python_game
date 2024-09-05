@@ -2,7 +2,7 @@ import sys
 import random
 from enum import Enum
 
-
+game_count=0
 
 class RPS(Enum):
     ROCK =1
@@ -34,8 +34,8 @@ def play_rps():
     else:
         print("Python Wins!")
         quit
-    game_count=0    
-    #global game_count   
+        
+    global game_count   
     game_count+=1
     print("Game_count: "+str(game_count))  
       
