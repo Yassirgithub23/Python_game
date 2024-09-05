@@ -3,6 +3,7 @@ import random
 from enum import Enum
 
 
+
 class RPS(Enum):
     ROCK =1
     PAPER =2
@@ -32,7 +33,12 @@ def play_rps():
         print("TIE GAME")                
     else:
         print("Python Wins!")
-        
+        quit
+    game_count=0    
+    #global game_count   
+    game_count+=1
+    print("Game_count: "+str(game_count))  
+      
     playagain = input("\nPlay again? \nY for Yes or\nQ for Quit\n\n ")
 
     if playagain.lower()=="y":
